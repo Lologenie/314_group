@@ -1,0 +1,47 @@
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
+
+public class FrequencyAnalysis {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть текст для аналізу:");
+        String text = scanner.nextLine();
+        System.out.println("Введіть кількість чисел після крапки:");
+        int decimalPlaces = scanner.nextInt();
+        scanner.close();
+
+        text = text.replaceAll("[^а-яА-Я]", "").toLowerCase();
+
+        Map<Character, Integer> charFrequencies = calculateCharFrequencies(text);
+        Map<String, Integer> bigramFrequencies = calculateBigramFrequencies(text);
+
+        System.out.println("Частоти символів:");
+        for (Map.Entry<Character, Integer> entry : charFrequencies.entrySet()) {
+            System.out.printf("%s: %." + decimalPlaces + "f%n", entry.getKey(), (double) entry.getValue() / (double) text.length());
+        }
+
+        System.out.println("Частоти біграм:");
+        for (Map.Entry<String, Integer> entry : bigramFrequencies.entrySet()) {
+            System.out.printf("%s: %." + decimalPlaces + "f%n", entry.getKey(), (double) entry.getValue() / (text.length() - 1));
+        }
+    }
+
+    private static Map<Character, Integer> calculateCharFrequencies(String text) {
+        Map<Character, Integer> frequencies = new HashMap<>();
+        for (char c : text.toCharArray()) {
+            frequencies.put(c, frequencies.getOrDefault(c, 0) + 1);
+        }
+        return frequencies;
+    }
+
+    private static Map<String, Integer> calculateBigramFrequencies(String text) {
+        Map<String, Integer> frequencies = new HashMap<>();
+        for (int i = 0; i < text.length() - 1; i++) {
+            String bigram = text.substring(i, i + 2);
+            frequencies.put(bigram, frequencies.getOrDefault(bigram, 0) + 1);
+        }
+        return frequencies;
+    }
+}
