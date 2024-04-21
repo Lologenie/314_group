@@ -1,0 +1,20 @@
+total 32
+drwxrwxrwx 1 kostia kostia 4096 Oct 25 11:16 .
+drwxrwxrwx 1 kostia kostia 4096 Oct 17 20:54 ..
+-rwxrwxrwx 1 kostia kostia  236 Oct 24 22:23 2.3-1.sh
+-rwxrwxrwx 1 kostia kostia  112 Oct 25 11:29 2.3-2.sh
+-rwxrwxrwx 1 kostia kostia  423 Oct 25 11:23 2.3-3.sh
+drwxrwxrwx 1 kostia kostia 4096 Oct 16 10:09 Buisness
+-rwxrwxrwx 1 kostia kostia  784 Jan  4  2023 Cisco Packet Tracer.lnk
+-rwxrwxrwx 1 kostia kostia  719 Aug 17  2022 Visual Studio Code.lnk
+-rwxrwxrwx 1 kostia kostia 2459 Sep 24 13:57 WPS Office.lnk
+-rwxrwxrwx 1 kostia kostia 2553 Oct 14 21:44 WPS PDF.lnk
+drwxrwxrwx 1 kostia kostia 4096 Sep  9  2022 Web Design
+-rwxrwxrwx 1 kostia kostia 1077 Oct 25 11:23 contents-sorted.txt
+-rwxrwxrwx 1 kostia kostia    0 Oct 25 11:31 contents.txt
+-rwxrwxrwx 1 kostia kostia  420 Oct 25 11:23 field2.txt
+drwxrwxrwx 1 kostia kostia 4096 Jul 16 09:40 hashcat-6.2.6
+-rwxrwxrwx 1 kostia kostia  247 Oct 24 21:51 test.sh
+drwxrwxrwx 1 kostia kostia 4096 Jun 28 10:01  
+drwxrwxrwx 1 kostia kostia 4096 Nov 28  2022 КПП
+drwxrwxrwx 1 kostia kostia 4096 Sep 23 03:45 Музон
