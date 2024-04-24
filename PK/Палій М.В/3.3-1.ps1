@@ -4,7 +4,7 @@
 $Duration = 10
 
 # Specify the output CSV file path
-$OutputFile = "C:\Users\Kostia\Desktop\PerformanceData.csv"
+$OutputFile = "C:\Users\Mykol\Desktop\PerformanceData.csv"
 
 # Define the performance counters to collect
 $Counters = @(
