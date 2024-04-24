@@ -1,8 +1,8 @@
 ﻿# Specify the path to the CSV file containing the collected performance data
-$InputFile = "C:\Users\Kostia\Desktop\PerformanceData.csv"
+$InputFile = "C:\Users\Mykol\Desktop\PerformanceData.csv"
 
 # Specify the output report file path
-$OutputReportFile = "C:\Users\Kostia\Desktop\PerformanceReport.txt"
+$OutputReportFile = "C:\Users\Mykol\Desktop\PerformanceReport.txt"
 
 # Load the performance data from the CSV file
 $PerformanceData = Import-Csv -Path $InputFile
